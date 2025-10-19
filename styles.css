@@ -1,11 +1,53 @@
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('Resources/BrandonGrotesueFont/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('Resources/BrandonGrotesueFont/HvDTrial_Brandon_Grotesque_light_italic-BF64a625c93ac64.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('Resources/BrandonGrotesueFont/HvDTrial_Brandon_Grotesque_medium_italic-BF64a625c928c55.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('Resources/BrandonGrotesueFont/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('Resources/BrandonGrotesueFont/HvDTrial_Brandon_Grotesque_bold_italic-BF64a625c93b0ce.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('Resources/BrandonGrotesueFont/HvDTrial_Brandon_Grotesque_black-BF64a625c944b08.otf') format('opentype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('Resources/BrandonGrotesueFont/HvDTrial_Brandon_Grotesque_black_italic-BF64a625c93406c.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-font-face{
-  src: local(brandon-grotesque);
 }
 
 body {
