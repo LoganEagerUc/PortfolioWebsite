@@ -1,0 +1,8 @@
+{
+  "name": "game-dev-portfolio",
+  "version": "1.0.0",
+  "description": "Game development portfolio website",
+  "scripts": {
+    "dev": "npx http-server -p 3000"
+  }
+}
