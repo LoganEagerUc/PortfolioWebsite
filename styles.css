@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'brandon-grotesque', Helvetica, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -30,6 +30,28 @@ header-2{
     line-height: 75px;
     text-transform: uppercase;
     color: #252D37;
+}
+
+.content-1 {
+  font-family: OpenSansRegular, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-transform: none;
+  color: #44555F;
+}
+
+.content-2 {
+  font-family: OpenSansRegular, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-transform: none;
+  color: #44555F;
 }
 
 nav {
