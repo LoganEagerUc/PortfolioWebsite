@@ -1,3 +1,5 @@
+@import url('./fonts/fonts.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: 'brandon-grotesque', Helvetica, Geneva, Verdana, sans-serif;
+    font-family: brandon-grotesque, Helvetica, Geneva, Verdana, sans-serif;
     font-style: normal;
     font-weight: 100;
     line-height: 1.6;
@@ -152,6 +154,15 @@ section h2 {
 
 .contact p {
     font-size: 1.1rem;
+}
+
+.email-prompt {
+    display: inline;
+    margin: 0;
+}
+
+address {
+    white-space: nowrap;
 }
 
 footer {
