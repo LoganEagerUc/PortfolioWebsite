@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+font-face{
+  src: local(brandon-grotesque);
+}
+
 body {
     font-family: 'brandon-grotesque', Helvetica, Geneva, Verdana, sans-serif;
     font-style: normal;
