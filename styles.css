@@ -156,6 +156,10 @@ section h2 {
     font-size: 1.1rem;
 }
 
+.email-prompt {
+    white-space: nowrap;
+}
+
 footer {
     background: #222;
     color: #fff;
