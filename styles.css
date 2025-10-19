@@ -4,19 +4,26 @@
     box-sizing: border-box;
 }
 
+@font-face{
+  font-family: Monterra;
+  src: url();
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-header {
-    background: #222;
-    color: #fff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+header-1{
+    font-family: brandon-grotesque, Helvetica, sans-serif;
+    font-size: 125px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 8px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #252C37;
 }
 
 nav {
