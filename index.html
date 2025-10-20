@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Development Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <!-- MAIN TODO: Make cards open to project 'stories' -->
+  <!-- BACKLOG TODO: 
+    1. Add more projects to the Projects section. 
+    2. Include links to social media profiles in the Contact section. 
+    3. Add animations or transitions for section changes. 
+    4. Fix the Nav bar for smaller screens. 
+    -->
+
+  <body>
     <header>
-        <nav>
-            <!-- brand is not the document h1 so headings remain semantic -->
-            <h1>Logan Eager GD</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <h1>Logan Eager <span class="highlight">G.D</span></h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <!-- main page heading uses header-1 -->
-            <h1 class="header-1">Eager</h1>
-            <p class="content-1">Showcasing my passion for creating immersive gaming experiences.</p>
-        </section>
+      <section id="home" class="hero">
+        <h1 class="header-1">Eager</h1>
+        <p class="content-1">
+          Showcasing my passion for creating immersive gaming experiences.
+        </p>
+      </section>
 
-        <section id="about" class="about">
-            <div class="about-inner">
-                <h2 class="header-2">About Me</h2>
-                <p class="content-1">Game development student with an inexplicable passion for game design. 
-                    Has a intense work ethic and a love of learning. Has an exclusively wide range of tech based and personal skills.</p>
-                <img src="Resources/HeadshotOfLogan.jpg" class="headshot-img" alt="Headshot of Logan">
-            </div>
-        </section>
+      <section id="about" class="about">
+        <div class="about-inner">
+          <h2 class="header-2">About Me</h2>
+          <p class="content-1">
+            Game development student with an inexplicable passion for game
+            design. Has a intense work ethic and a love of learning. Has an
+            exclusively wide range of tech based and personal skills.
+          </p>
+          <img
+            src="Resources/HeadshotOfLogan.jpg"
+            class="headshot-img"
+            alt="Headshot of Logan"
+          />
+        </div>
+      </section>
 
-        <section id="projects" class="projects">
-            <h2 class="header-2">Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="Resources/Game Photos/PressAnyKeyToExist.png" alt="Press Any Key To Exist screenshot">
-                    <h3>PRESS ANY KEY TO EXIST</h3>
-                    <p class="content-2">Solo, VR, Unity, 4 Weeks</p>
-                </div>
-                <div class="project-card">
-                    <img src="Resources/Game Photos/TempHLSLHelmet.png" alt="Projected Helmet UI screenshot">
-                    <h3>Projected Helmet UI</h3>
-                    <p class="content-2">Solo, PC, Unity, 2 Weeks</p>
-                </div>
-                <div class="project-card">
-                    <img src="Resources/Game Photos/PakASnak.png" alt="Pack a Snack screenshot">
-                    <h3>Pack a Snack</h3>
-                    <p class="content-2">Team of 5, PC, Unity, 6 Weeks, Designer</p>
-                </div>
-            </div>
-        </section>
+      <section id="projects" class="projects">
+        <h2 class="header-2">Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img
+              src="Resources/Game Photos/PressAnyKeyToExist.png"
+              alt="Press Any Key To Exist screenshot"
+            />
+            <h3>PRESS ANY KEY TO EXIST</h3>
+            <p class="content-2">Solo, VR, Unity, 4 Weeks</p>
+          </div>
+          <div class="project-card">
+            <img
+              src="Resources/Game Photos/TempHLSLHelmet.png"
+              alt="Projected Helmet UI screenshot"
+            />
+            <h3>Projected Helmet UI</h3>
+            <p class="content-2">Solo, PC, Unity, 2 Weeks</p>
+          </div>
+          <div class="project-card">
+            <img
+              src="Resources/Game Photos/PakASnak.png"
+              alt="Pack a Snack screenshot"
+            />
+            <h3>Pack a Snack</h3>
+            <p class="content-2">Team of 5, PC, Unity, 6 Weeks, Designer</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="contact">
-            <h2 class="header-2">Contact</h2>
-            <p class="content-2">I respond to all emails within 24 hours.</p>
-            <address>
-              <span class="email-prompt">Email me here:</span>
-              <a href="mailto:loganallaneager@gmail.com" class="content-2">loganallaneager@gmail.com</a>
-            </address>
-        </section>
+      <section id="contact" class="contact">
+        <h2 class="header-2">Contact</h2>
+        <p class="content-2">I respond to all emails within 24 hours.</p>
+        <address>
+          <span class="email-prompt">Email me here:</span>
+          <a href="mailto:loganallaneager@gmail.com" class="content-2"
+            >loganallaneager@gmail.com</a
+          >
+        </address>
+      </section>
     </main>
 
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
