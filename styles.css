@@ -221,6 +221,11 @@ header {
   margin-bottom: 1rem;
 }
 
+.project-link {
+  text-decoration: none;
+  text-align: center;
+}
+
 /* CONTACT SECTION STYLES */
 
 .contact p {
