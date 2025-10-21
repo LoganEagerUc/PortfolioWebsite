@@ -1,0 +1,118 @@
+/* CSS IMPORTS FILE FOR GLOBAL STYLES */
+/* Importing font face styles */
+@import url("./fontface-styles.css");
+
+/* Colour Palette (Colours prefixed by H)*/
+:root {
+  --HBlack: #0f1124;
+  --HDarkGrey: #112733;
+  --HRed: #bf0d22;
+  --HTeal: #7891ba;
+  --HLightGrey: #a1998e;
+  --scale-factor: 1; /* Default scale, adjust this to scale everything */
+}
+
+/* MAIN CONTENT STYLES */
+main {
+  max-width: 100rem;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+section {
+  scale: 100%;
+  max-width: 90;
+  margin: 1.8rem auto;
+  padding: 3rem;
+  border-radius: 3px;
+  background-clip: border-box;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.25);
+  align-self: center;
+  padding: calc(3rem * var(--scale-factor));
+  margin: calc(1.8rem * var(--scale-factor)) auto;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../Resources/WebPortfolioBG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: brandon-grotesque, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 1.6;
+  color: white;
+}
+q {
+  font-style: italic;
+  font-weight: 300;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: var(--HTeal) 2px solid;
+  border-radius: 8px;
+}
+
+.header-1 {
+  font-family: brandon-grotesque, Helvetica, sans-serif;
+  font-size: calc(80px * var(--scale-factor));
+  font-style: bold;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: calc(40px * var(--scale-factor));
+  line-height: normal;
+  color: var(--HDarkGrey);
+}
+
+.header-2 {
+  font-family: brandon-grotesque, Helvetica, sans-serif;
+  font-size: calc(40px * var(--scale-factor));
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: calc(75px * var(--scale-factor));
+  text-transform: uppercase;
+  color: white;
+}
+
+.content-1 {
+  font-family: Helvetica, sans-serif;
+  font-size: calc(18px * var(--scale-factor));
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: calc(36px * var(--scale-factor));
+  text-transform: none;
+  color: white;
+}
+
+.content-2 {
+  font-family: Helvetica, sans-serif;
+  font-size: calc(18px * var(--scale-factor));
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: calc(36px * var(--scale-factor));
+  text-transform: none;
+  color: white;
+}
+
+.highlight {
+  color: var(--HRed);
+  font-weight: 900;
+}

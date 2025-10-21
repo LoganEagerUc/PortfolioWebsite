@@ -1,128 +1,37 @@
+/* MAIN PAGE STYLESHEET */
 /* Import Brandon Grotesque font */
-@import url("./fonts/fonts.css");
-
-/* Colour Palette (Colours prefixed by H)*/
-:root {
-  --HBlack: #0f1124;
-  --HDarkGrey: #112733;
-  --HRed: #bf0d22;
-  --HTeal: #7891ba;
-  --HLightGrey: #a1998e;
-}
-
-/* MAIN CONTENT STYLES */
-main {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-section {
-  padding: 4rem 0;
-  border-bottom: 1px solid white;
-}
-
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: white;
-}
-
-/* GLOBAL STYLES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-image: url(Resources/WebPortfolioBG.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  font-family: brandon-grotesque, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  line-height: 1.6;
-  color: white;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: #ea6666 2px solid;
-}
-
-.header-1 {
-  font-family: brandon-grotesque, Helvetica, sans-serif;
-  font-size: 70px;
-  font-style: bold;
-  font-weight: 900;
-  letter-spacing: 4px;
-  line-height: normal;
-  color: var(--HDarkGrey);
-}
-
-.header-2 {
-  font-family: brandon-grotesque, Helvetica, sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 900;
-  letter-spacing: 5px;
-  line-height: 75px;
-  text-transform: uppercase;
-  color: white;
-}
-
-.content-1 {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 36px;
-  text-transform: none;
-  color: white;
-}
-
-.content-2 {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 36px;
-  text-transform: none;
-  color: white;
-}
-
-.highlight {
-  color: var(--HRed);
-  font-weight: 900;
-}
+@import url("./StyleSheetImports/fontface-styles.css");
+/* import global styles */
+@import url("./StyleSheetImports/global-styles.css");
 
 /* NAVIGATION STYLES */
 nav {
-  max-width: 150rem;
+  max-width: 1200px; /* reduced from 180rem */
+  width: calc(100% - 2rem);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0.6rem 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
+  justify-content: space-between; /* replaces fixed gap */
+  background: rgba(0, 0, 10, 0.75);
+  border-radius: 8px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav h1 {
   color: white;
   font-size: 4rem;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
 }
 
 nav a {
@@ -131,6 +40,8 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
 }
 
 nav a:hover {
@@ -138,17 +49,20 @@ nav a:hover {
 }
 
 header {
-  width: 100%;
-  height: auto;
-  background: var(--HDarkGrey); /* change to any var(--color-*) or gradient */
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  position: fixed;
+  top: -0.1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+  background: transparent;
+  margin: 0;
 }
 
 /* HERO SECTION STYLES */
 .hero {
-  background: linear-gradient(135deg, #ea6666 0%, #413e44 100%);
+  background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   color: white;
   text-align: center;
   padding: 6rem 2rem;
@@ -168,7 +82,8 @@ header {
 
 /* ABOUT SECTION STYLES */
 .about {
-  width: 100vw;
+  width: 100%; /* removed viewport width */
+  max-width: 1200px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -179,7 +94,7 @@ header {
 }
 
 .about-inner {
-  max-width: 1200px;
+  max-width: 90rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -190,7 +105,7 @@ header {
   display: block;
   margin-top: 1rem;
   border-radius: 50%;
-  border: 4px solid var(--HLightGrey);
+  border: 4px solid white;
   object-fit: cover;
 }
 
@@ -278,5 +193,29 @@ address {
     width: 150px;
     height: 150px;
     border: 3px solid var(--HDarkGrey);
+  }
+
+  /* keep accessibility: larger click targets */
+  nav a {
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+  }
+
+  /* dock-style fixed header at bottom center */
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  nav {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    justify-content: space-between;
   }
 }
