@@ -4,62 +4,6 @@
 /* import global styles */
 @import url("./StyleSheetImports/global-styles.css");
 
-/* NAVIGATION STYLES */
-nav {
-  max-width: 1200px; /* reduced from 180rem */
-  width: calc(100% - 2rem);
-  margin: 0 auto;
-  padding: 0.6rem 1rem;
-  display: flex;
-  justify-content: space-between; /* replaces fixed gap */
-  background: rgba(0, 0, 10, 0.75);
-  border-radius: 8px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav h1 {
-  color: white;
-  font-size: 4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: left;
-}
-
-nav a {
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s;
-  padding: 0.4rem 0.6rem;
-  border-radius: 8px;
-}
-
-nav a:hover {
-  color: var(--HRed);
-}
-
-header {
-  position: fixed;
-  top: -0.1rem;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 200;
-  background: transparent;
-  margin: 0;
-}
-
 /* HERO SECTION STYLES */
 .hero {
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
@@ -82,15 +26,15 @@ header {
 
 /* ABOUT SECTION STYLES */
 .about {
-  width: 100%; /* removed viewport width */
+  width: 100%;
   max-width: 1200px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--HTeal); /* teal strip */
+  background: var(--HTeal);
   color: white;
-  border-bottom: none; /* override general section border */
-  padding: 4rem 0; /* vertical spacing for the strip */
+  border-bottom: none;
+  padding: 4rem 0;
 }
 
 .about-inner {
@@ -167,16 +111,6 @@ address {
     padding: 2rem 0;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
   section h2 {
     font-size: 2rem;
   }
@@ -193,29 +127,5 @@ address {
     width: 150px;
     height: 150px;
     border: 3px solid var(--HDarkGrey);
-  }
-
-  /* keep accessibility: larger click targets */
-  nav a {
-    padding: 0.4rem 0.6rem;
-    border-radius: 8px;
-  }
-
-  /* dock-style fixed header at bottom center */
-  header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    bottom: auto;
-    transform: none;
-    width: 100%;
-  }
-
-  nav {
-    max-width: 100%;
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    justify-content: space-between;
   }
 }

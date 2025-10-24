@@ -116,3 +116,98 @@ img {
   color: var(--HRed);
   font-weight: 900;
 }
+
+/* NAV BAR STYLES */
+nav {
+  max-width: 1200px; /* changed to px from rem due to issues */
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between; /* replaces fixed gap */
+  background: rgba(0, 0, 10, 0.75);
+  border-radius: 8px;
+}
+/* THIS NAV BAR DOESENT SCALE PROPERLY?!?!?!? */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+nav a {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  color: var(--HRed);
+}
+
+header {
+  position: fixed;
+  top: -0.1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 200;
+  background: transparent;
+  margin: 0;
+}
+
+/* RESPONSIVE STYLES */
+/* ESSENTIALLY MOBILE SUPPORT, ISNT TRIGGERING!?!?!?*/
+@media (maxwidth = 768px) {
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    font-size: small;
+  }
+
+  /* larger nav buttons */
+  nav a {
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+  }
+
+  /* switches nav bar to column bar if mobile device */
+  nav {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    justify-content: space-between;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
