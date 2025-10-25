@@ -7,3 +7,18 @@ main {
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.title {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 350px;
+  padding-right: 250px;
+  background-color: var(--HDarkGrey);
+  flex: auto;
+  justify-content: center;
+}
+
+.title h1 {
+  font-size: 100px;
+  letter-spacing: 9px;
+}

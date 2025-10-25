@@ -1,17 +1,3 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
-
 // SCROLL VISUAL AID FUNCTION, (downwards arrow icon behaviour)
 
 // references
@@ -41,6 +27,7 @@ function handleScroll() {
   }, 60000); // 60,000ms == 1 min
 }
 
+// depending on flag, switches animation in 'buffer'
 function handleIconAnimation() {
   if (!footer) return;
 
