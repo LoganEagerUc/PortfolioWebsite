@@ -9,27 +9,22 @@
   --HRed: #bf0d22;
   --HTeal: #7891ba;
   --HLightGrey: #a1998e;
-  --scale-factor: 1; /* Default scale, adjust this to scale everything */
 }
 
 /* MAIN CONTENT STYLES */
 main {
-  max-width: 100rem;
-  margin: auto;
-  padding: 0 2rem;
+  align-self: center;
 }
 
 section {
   scale: 100%;
-  max-width: 90;
-  margin: 1.8rem auto;
-  padding: 3rem;
-  border-radius: 3px;
+  max-width: 1920px;
+  border-radius: 5px;
   background-clip: border-box;
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.25);
   align-self: center;
-  padding: calc(3rem * var(--scale-factor));
-  margin: calc(1.8rem * var(--scale-factor)) auto;
+  padding: 3rem;
+  margin: 1.8rem auto;
 }
 
 section h2 {
@@ -70,44 +65,44 @@ img {
 
 .header-1 {
   font-family: brandon-grotesque, Helvetica, sans-serif;
-  font-size: calc(80px * var(--scale-factor));
+  font-size: 80px;
   font-style: bold;
   font-weight: 1000;
   text-transform: uppercase;
-  letter-spacing: calc(40px * var(--scale-factor));
+  letter-spacing: 40px;
   line-height: normal;
   color: var(--HDarkGrey);
 }
 
 .header-2 {
   font-family: brandon-grotesque, Helvetica, sans-serif;
-  font-size: calc(40px * var(--scale-factor));
+  font-size: 40px;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 3px;
-  line-height: calc(75px * var(--scale-factor));
+  line-height: 75px;
   text-transform: uppercase;
   color: white;
 }
 
 .content-1 {
   font-family: Helvetica, sans-serif;
-  font-size: calc(18px * var(--scale-factor));
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: calc(36px * var(--scale-factor));
+  line-height: 36px;
   text-transform: none;
   color: white;
 }
 
 .content-2 {
   font-family: Helvetica, sans-serif;
-  font-size: calc(18px * var(--scale-factor));
+  font-size: 18px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
-  line-height: calc(36px * var(--scale-factor));
+  line-height: 36px;
   text-transform: none;
   color: white;
 }

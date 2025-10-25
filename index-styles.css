@@ -9,14 +9,13 @@
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   color: white;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 15rem 2rem;
   border-bottom: none;
+  margin-top: 150px;
 }
 
-.hero h2 {
+.hero h1 {
   color: white;
-  font-size: 3rem;
-  margin-bottom: 1rem;
 }
 
 .hero p {
@@ -28,13 +27,13 @@
 .about {
   width: 100%;
   max-width: 1200px;
-  position: relative;
   left: 50%;
+  position: sticky;
   transform: translateX(-50%);
-  background: var(--HTeal);
   color: white;
   border-bottom: none;
-  padding: 4rem 0;
+  padding: 4rem;
+  margin-left: 50rem;
 }
 
 .about-inner {
