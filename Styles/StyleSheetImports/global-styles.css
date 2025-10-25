@@ -89,7 +89,7 @@ section h2 {
 }
 
 body {
-  background-image: url(../Resources/web-portfolio-background.png);
+  background-image: url(../../Assets/web-portfolio-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

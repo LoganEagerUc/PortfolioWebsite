@@ -1,6 +1,6 @@
 /* MAIN PAGE STYLESHEET */
 /* import global styles */
-@import url("/StyleSheetImports/global-styles.css");
+@import url("StyleSheetImports/global-styles.css");
 
 main {
   max-width: 100rem;

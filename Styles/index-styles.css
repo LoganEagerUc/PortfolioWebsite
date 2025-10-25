@@ -1,8 +1,8 @@
 /* MAIN PAGE STYLESHEET */
 /* Import Brandon Grotesque font */
-@import url("./StyleSheetImports/fontface-styles.css");
+@import url("StyleSheetImports/fontface-styles.css");
 /* import global styles */
-@import url("./StyleSheetImports/global-styles.css");
+@import url("StyleSheetImports/global-styles.css");
 
 /* HERO SECTION STYLES */
 .hero {
