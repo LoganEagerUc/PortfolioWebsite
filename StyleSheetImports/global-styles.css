@@ -2,13 +2,61 @@
 /* Importing font face styles */
 @import url("./fontface-styles.css");
 
-/* Colour Palette (Colours prefixed by H)*/
+/* Colour Palette (Colours prefixed by H), interfaced by var*/
 :root {
   --HBlack: #0f1124;
   --HDarkGrey: #112733;
   --HRed: #bf0d22;
   --HTeal: #7891ba;
   --HLightGrey: #a1998e;
+}
+
+/* PAGE FADE IN TRANSITION */
+body {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* FOOTER STYLES / ARROW FADE OUT TRANSITION */
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -17vh;
+  width: 100%;
+  z-index: 1000;
+
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+footer.fade-in {
+  opacity: 0;
+  animation: fadeIn 2.5s forwards;
+}
+
+footer.fade-out {
+  opacity: 1;
+  animation: fadeOut 2.5s forwards;
+}
+
+footer img {
+  border: none;
+  scale: 25%;
+  filter: invert(1); /* originally black, turns white */
+}
+
+/* KEYFRAMES */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 /* MAIN CONTENT STYLES */
@@ -19,12 +67,14 @@ main {
 section {
   scale: 100%;
   max-width: 1920px;
+  max-height: 1080px;
   border-radius: 5px;
   background-clip: border-box;
   box-shadow: 0 15px 10px rgba(0, 0, 0, 0.25);
-  align-self: center;
   padding: 3rem;
   margin: 1.8rem auto;
+  margin-top: 250px;
+  margin-bottom: 150px;
 }
 
 section h2 {
@@ -35,13 +85,11 @@ section h2 {
 
 /* GLOBAL STYLES */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url(../Resources/WebPortfolioBG.png);
+  background-image: url(../Resources/web-portfolio-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -123,7 +171,6 @@ nav {
   background: rgba(0, 0, 10, 0.75);
   border-radius: 8px;
 }
-/* THIS NAV BAR DOESENT SCALE PROPERLY?!?!?!? */
 nav ul {
   list-style: none;
   display: flex;
@@ -169,7 +216,8 @@ header {
 }
 
 /* RESPONSIVE STYLES */
-/* ESSENTIALLY MOBILE SUPPORT, ISNT TRIGGERING!?!?!?*/
+/* ESSENTIALLY MOBILE SUPPORT,
+ ISNT TRIGGERING!?!?!?*/
 @media (maxwidth = 768px) {
   header {
     position: sticky;

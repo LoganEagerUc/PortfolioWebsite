@@ -11,7 +11,6 @@
   text-align: center;
   padding: 15rem 2rem;
   border-bottom: none;
-  margin-top: 150px;
 }
 
 .hero h1 {
@@ -25,21 +24,9 @@
 
 /* ABOUT SECTION STYLES */
 .about {
-  width: 100%;
-  max-width: 1200px;
-  left: 50%;
-  position: sticky;
-  transform: translateX(-50%);
-  color: white;
-  border-bottom: none;
-  padding: 4rem;
-  margin-left: 50rem;
-}
-
-.about-inner {
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+  display: block;
+  position: relative;
+  padding-right: 1000px;
 }
 
 .about .headshot-img {
@@ -85,7 +72,9 @@
 }
 
 /* CONTACT SECTION STYLES */
-
+.contact {
+  margin-bottom: 0px;
+}
 .contact p {
   font-size: 1.1rem;
   color: white;
