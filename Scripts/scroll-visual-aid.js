@@ -24,7 +24,7 @@ function handleScroll() {
   inactivityTimer = setTimeout(() => {
     iconVisible = true;
     handleIconAnimation();
-  }, 60000); // 60,000ms == 1 min
+  }, 10000); // 60,000ms == 1 min
 }
 
 // depending on flag, switches animation in 'buffer'

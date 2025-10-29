@@ -13,7 +13,8 @@ main {
   padding-bottom: 100px;
   padding-left: 350px;
   padding-right: 250px;
-  background-color: var(--HDarkGrey);
+  background-image: url("../Assets/GamePhotos/ProjectedHelmetUI/projected-helmet-ui-anim.gif");
+  background-size: cover;
   flex: auto;
   justify-content: center;
 }
@@ -21,4 +22,15 @@ main {
 .title h1 {
   font-size: 100px;
   letter-spacing: 9px;
+}
+
+image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: white;
 }
