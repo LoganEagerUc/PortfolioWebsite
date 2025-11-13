@@ -5,15 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Projected Helmet UI Project</title>
-    <meta name="description" content="" />
+    <title>Projected Helmet UI | Logan Eager Game Design Portfolio</title>
+    <meta name="description" content="Projected Helmet UI: Solo Unity shader project by Logan Eager. HLSL raymarching for retro-futuristic VR helmet UI. University of Canterbury coursework.">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../Assets/controller-page-icon.ico" />
     <link rel="stylesheet" href="Styles/projected-helmet-ui-styles.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="Assets/controller-page-icon.ico"
-    />
   </head>
 
   <body>
@@ -22,13 +18,13 @@
       <nav>
         <h1>Logan Eager <span class="highlight">G.D</span></h1>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
         </ul>
       </nav>
     </header>
     
     <main>
-      <section class="title">
+      <section class="project-hero">
         <h1 class="header-1">Projected Helmet <span class="highlight">U.I</span></h1>
         
       </section>
@@ -39,14 +35,16 @@
           the project was primarily research based (atleast for me) and I hit many knowledge blocks, most notably: Matrix transformations, Projection math and 
           other cornerstones of computer graphics like vertex and fragment mapping. Albeit, a great learning experience.
         </p>
-        <img src="Assets/GamePhotos/ProjectedHelmetUI/UERaymarching.png">
+        <img src="Assets/GamePhotos/ProjectedHelmetUI/UERaymarching.png" alt="Unreal Engine Raymarching Visualisation"
+        loading="lazy", width="800", height="450">
       </section>
 
       <section>
         <div><h1 class="header-2">Purpose</h1></div>
         <p class="content-1"> I wanted to create a shader which could take a 2D render texture and translate it from the camera onto a concave mesh (as a projector would). After watching and completing a <a href="https://www.youtube.com/watch?v=EjCPr-bxI34">tutorial by RenderBucket</a> for shaders and raymarching. I became fascinated with shaders and had found an outlet
           for a retro projector UI which I had been wanting to do for a long time. I wanted a retro-futuristic feel with an immersive touch for virtual reality based games.</p>
-        <img src="Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.png">
+        <img src="Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.png" alt="Projected Helmet UI in Space Environment"
+        loading="lazy", width="800", height="450">
       </section>
 
       <section>
@@ -56,7 +54,8 @@
            design in my head onto the screen. Notable roadblocks during development were getting a 2D UI into the projector, I ended up solving This
            by using a 2D render texture, (a common solution for reactive UI's in unity)
         </p>
-        <img src="Assets/GamePhotos/ProjectedHelmetUI/render-texture-gen.png">
+        <img src="Assets/GamePhotos/ProjectedHelmetUI/render-texture-gen.png" alt="Render Texture Generator"
+        loading="lazy", width="800", height="450">
       </section>
 
       <section>
@@ -70,11 +69,12 @@
         </p>
 
         <p><a href="https://eng-git.canterbury.ac.nz/SoPD/prod-224_22s1/2025/lea46/comp-shader-proj.git">Project Git Repository</a></p>
-        <img src="Assets/GamePhotos/ProjectedHelmetUI/name-health-in-helmet.png">
+        <img src="Assets/GamePhotos/ProjectedHelmetUI/name-health-in-helmet.png" alt="Name and Health Demo for Shader"
+        loading="lazy", width="800", height="450">
       </section>
       
       <footer>
-      <img src="/Assets/down-arrow.png" alt="" />
+      <img src="../Assets/down-arrow.png" alt="Scroll Down Arrow" />
       </footer>
 
       <script src="Scripts/scroll-visual-aid.js"></script>

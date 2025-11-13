@@ -3,9 +3,3 @@
 @import url("StyleSheetImports/fontface-styles.css");
 /* import global styles */
 @import url("StyleSheetImports/global-styles.css");
-
-main {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 0 2rem;
-}

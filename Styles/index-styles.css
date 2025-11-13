@@ -1,48 +1,44 @@
 /* MAIN PAGE STYLESHEET */
 /* Import Brandon Grotesque font */
 @import url("StyleSheetImports/fontface-styles.css");
+
 /* import global styles */
 @import url("StyleSheetImports/global-styles.css");
 
-/* HERO SECTION STYLES */
 
-.Hidden {
+/* HIDDEN HEADER CLASS FOR SEO */
+
+.hidden {
   position: absolute;
   left: -9999px;
   opacity: 0;
 }
 
+/* HERO SECTION STYLES */
 .hero {
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
-  color: white;
   text-align: center;
-  padding: 15rem 2rem;
+  padding: clamp(8rem, 20vh, 15rem) 2rem;;
   border-bottom: none;
-}
-
-.hero h1 {
-  color: white;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: white;
 }
 
 /* ABOUT SECTION STYLES */
 .about {
-  display: block;
-  position: relative;
-  padding-right: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
 }
 
-.about .headshot-img {
+.headshot-img {
   width: 180px;
   height: auto;
   display: block;
   margin-top: 1rem;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 3px solid white;
   object-fit: cover;
 }
 
@@ -60,7 +56,7 @@
   border-radius: 8px;
   border: 1px solid #4c0a0a;
   transition: transform 0.3s, box-shadow 0.3s;
-  color: white;
+
 }
 
 .project-card:hover {
@@ -68,57 +64,35 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.project-card h3 {
-  color: white;
-  margin-bottom: 1rem;
-}
-
 .project-link {
   text-decoration: none;
   text-align: center;
+  color: white;
 }
 
 /* CONTACT SECTION STYLES */
 .contact {
+  padding-bottom: 6rem;
   margin-bottom: 0px;
-}
-.contact p {
-  font-size: 1.1rem;
-  color: white;
 }
 
 .email-prompt {
   font-size: 1.2rem;
   font-style: italic;
-  display: inline;
-  margin: 0;
-  color: white;
-}
-
-address {
-  white-space: nowrap;
-  color: white;
+  margin: 0rem;
 }
 
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
   .about {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
+    gap: 2rem;
   }
 
   section h2 {
     font-size: 2rem;
   }
-
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .headshot-img {
+  .about .headshot-img {
     width: 150px;
     height: 150px;
     border: 3px solid var(--HDarkGrey);

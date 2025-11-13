@@ -8,29 +8,41 @@ main {
   padding: 0 2rem;
 }
 
-.title {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 350px;
-  padding-right: 250px;
-  background-image: url("../Assets/GamePhotos/ProjectedHelmetUI/projected-helmet-ui-anim.gif");
-  background-size: cover;
-  flex: auto;
+/* HERO */
+.project-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  background: url("../Assets/GamePhotos/ProjectedHelmetUI/projected-helmet-ui-anim.gif") center/cover no-repeat;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 4rem;
+}
+.project-hero h1 {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(3rem, 8vw, 6rem);   /* ← responsive magic */
+  letter-spacing: 0.5rem;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.title h1 {
-  font-size: 100px;
-  letter-spacing: 9px;
-}
-
-image {
+img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 
 a {
   color: white;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 1rem;
+  }
 }
