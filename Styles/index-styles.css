@@ -18,7 +18,7 @@
 .hero {
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   text-align: center;
-  padding: clamp(8rem, 20vh, 15rem) 2rem;;
+  padding: clamp(8rem, 10vh, 15rem) 1rem;
   border-bottom: none;
 }
 
@@ -26,10 +26,15 @@
 .about {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 4rem;
   padding: 4rem 2rem;
   flex-wrap: wrap;
+}
+.about .content-1 {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .headshot-img {
@@ -38,7 +43,7 @@
   display: block;
   margin-top: 1rem;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid var(--HDarkGrey);
   object-fit: cover;
 }
 
@@ -56,7 +61,6 @@
   border-radius: 8px;
   border: 1px solid #4c0a0a;
   transition: transform 0.3s, box-shadow 0.3s;
-
 }
 
 .project-card:hover {
@@ -76,6 +80,12 @@
   margin-bottom: 0px;
 }
 
+a{
+  color: var(--HTeal);
+  font-weight: 700;
+  font-size: large;
+}
+
 .email-prompt {
   font-size: 1.2rem;
   font-style: italic;
@@ -91,10 +101,5 @@
 
   section h2 {
     font-size: 2rem;
-  }
-  .about .headshot-img {
-    width: 150px;
-    height: 150px;
-    border: 3px solid var(--HDarkGrey);
   }
 }
