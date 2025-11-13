@@ -5,6 +5,13 @@
 @import url("StyleSheetImports/global-styles.css");
 
 /* HERO SECTION STYLES */
+
+.Hidden {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
 .hero {
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   color: white;
