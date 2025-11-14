@@ -14,22 +14,24 @@
 
   <body>
     
+    <nav>
+      <h1>Logan Eager <span class="highlight">G.D</span></h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+
     <header>
-      <nav>
-        <h1>Logan Eager <span class="highlight">G.D</span></h1>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-        </ul>
-      </nav>
+      <div class="project-hero">
+        <h1 class="header-1">Projected Helmet <span class="highlight">U.I</span></h1>
+      </div>
     </header>
     
     <main>
-      <section class="project-hero">
-        <h1 class="header-1">Projected Helmet <span class="highlight">U.I</span></h1>
-      </section>
+      
 
       <section>
-        <div><h1 class="header-2">Overview</h1></div>
+        <h1 class="header-2">Overview</h1>
         <p class="content-1">This project was created using the <strong>Unity</strong> game engine. It was primarily written in <strong>HLSL</strong>, utilising unitys <strong>URP</strong> and <strong>ShaderLabs</strong> API.
           the project was primarily research based (atleast for me) and I hit many knowledge blocks, most notably: Matrix transformations, Projection math and 
           other cornerstones of computer graphics like vertex and fragment mapping. Albeit, a great learning experience.
@@ -39,7 +41,7 @@
       </section>
 
       <section>
-        <div><h1 class="header-2">Purpose</h1></div>
+        <h1 class="header-2">Purpose</h1>
         <p class="content-1"> I wanted to create a shader which could take a 2D render texture and translate it from the camera onto a concave mesh (as a projector would). After watching and completing a <a href="https://www.youtube.com/watch?v=EjCPr-bxI34">tutorial by RenderBucket</a> for shaders and raymarching. I became fascinated with shaders and had found an outlet
           for a retro projector UI which I had been wanting to do for a long time. I wanted a retro-futuristic feel with an immersive touch for virtual reality based games.</p>
         <img src="Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.png" alt="Projected Helmet UI in Space Environment"
@@ -47,7 +49,7 @@
       </section>
 
       <section>
-        <div><h1 class="header-2">Process</h1></div>
+        <h1 class="header-2">Process</h1>
         <p class="content-1">I built this partly during one of my game computation university courses, however after biting off more than I could chew,
           it quickly became a passion project. I spent most of my time in old Unity forums and <strong>Visual Studio Code</strong>, just trying to get the
            design in my head onto the screen. Notable roadblocks during development were getting a 2D UI into the projector, I ended up solving This
@@ -58,7 +60,7 @@
       </section>
 
       <section>
-        <div><h1 class="header-2">Product</h1></div>
+        <h1 class="header-2">Product</h1>
         <p class="content-1">The most difficult problem in this project byfar was writing the shader, I've attached the git repo below if you would like
           a more complex explanation, but if not here is a short version; the players data is handled using <strong>Scriptable Objects</strong>
            this is then handed to the <strong>2D Render Texture</strong> which is finally passed into the shader. In another area --- a script sends all the 
@@ -72,11 +74,13 @@
         loading="lazy", width="800", height="450">
       </section>
       
-      <footer>
-      <img src="Assets/down-arrow.png" alt="Scroll Down Arrow" />
-      </footer>
-
-      <script src="Scripts/scroll-visual-aid.js"></script>
+      
     </body>
+
+    <footer>
+      <img src="Assets/down-arrow.png" alt="Scroll Down Arrow" />
+    </footer>
+
+    <script src="Scripts/scroll-visual-aid.js"></script>
   </main>
 </html>

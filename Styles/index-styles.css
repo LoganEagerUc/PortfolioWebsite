@@ -15,32 +15,25 @@
 }
 
 /* HERO SECTION STYLES */
-.hero {
+.title-hero {
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   text-align: center;
   padding: clamp(8rem, 10vh, 15rem) 1rem;
+  margin: 10vh;
 }
 
 /* ABOUT SECTION STYLES */
 .about {
   display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 4rem;
-  padding: 4rem 2rem;
+  flex-direction: column;
   flex-wrap: wrap;
-}
-.about .content-1 {
   max-width: 600px;
-  font-size: 1.1rem;
-  line-height: 1.6;
 }
 
 .headshot-img {
   width: 180px;
   height: auto;
   display: block;
-  margin-top: 1rem;
   border-radius: 50%;
   border: 3px solid var(--HDarkGrey);
   object-fit: cover;
@@ -51,7 +44,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+}
+
+.project-grid a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 
 .project-card {
@@ -62,16 +60,16 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
-  margin-top: -5px;
-  box-shadow: 0 4px 12px rgba(191, 13, 34, 0.4);
+/* make project cards show click pointer when hovered */
+.project-card img {
+  cursor: pointer;
 }
 
-.project-link {
-  text-decoration: none;
-  text-align: center;
-  color: white;
+.project-card:hover {
+  margin-top: -5px;
+  box-shadow: 0 10px 10px rgba(10, 10, 10, 0.2);
 }
+
 
 /* CONTACT SECTION STYLES */
 .contact {
@@ -82,23 +80,24 @@
 a{
   color: var(--HTeal);
   font-weight: 700;
-  font-size: large;
+  font-size: 20px;
+}
+
+address{
+  display: flex;
 }
 
 .email-prompt {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-style: italic;
-  margin: 0rem;
+  padding: 1px;
 }
 
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
-  .about {
-    padding: 2rem 1rem;
-    gap: 2rem;
+
+   .title-hero{
+    margin: 1vh;
   }
 
-  section h2 {
-    font-size: 2rem;
-  }
 }

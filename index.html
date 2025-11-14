@@ -3,86 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Logan Eager Game Design Portfolio: Unity and Unreal PC & VR projects like 
-    Press Any Key To Exist. Student game dev showcasing immersive experiences. View demos & contact." />
-    <title>Logan Eager | Game Design Student Portfolio (Unity & Unreal)</title>
+
+    <!-- Site Icon -->
     <link
       rel="icon"
       type="image/x-icon"
       href="Assets/controller-page-icon.ico"
     />
+
+    <!-- Title & Description -->
+    <title>Logan Eager | Game Design Student Portfolio (Unity & Unreal)</title>
+    <meta name="description" content="Logan Eager Game Design Portfolio: Unity and Unreal PC & VR projects like 
+    Press Any Key To Exist. Student game dev showcasing immersive experiences. View demos & contact." />
+    
+    <!-- CSS Stylesheet link -->
     <link rel="stylesheet" href="Styles/index-styles.css" />
 
+    <!-- Schema script for SEO -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Logan Eager",
-      "jobTitle": "Game Design Student & Developer",
-      "url": "https://loganeageruc.github.io/PortfolioWebsite/",
-      "image": "https://loganeageruc.github.io/PortfolioWebsite/Assets/headshot-of-logan.jpg",
-      "email": "loganallaneager@gmail.com",
-      "description": "Logan Eager Game Design Portfolio: Unity and Unreal PC & VR projects like Press Any Key To Exist. University of Canterbury student showcasing immersive experiences.",
-      "knowsAbout": ["Unity", "Unreal Engine", "VR Game Development", "Game Design"],
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Canterbury"
-      },
-      "workLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Christchurch",
-          "addressCountry": "NZ"
-        }
-      },
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Bachelor of Digital Screen with Honours (Current)",
-          "credentialCategory": "Enrollment",
-          "recognizedBy": {
-            "@type": "CollegeOrUniversity",
-            "name": "University of Canterbury"
-          },
-          "educationalLevel": "Undergraduate",
-          "dateCreated": "2024-02"
-        }
-      ]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Logan Eager",
+        "jobTitle": "Game Design Student & Developer",
+        "url": "https://loganeageruc.github.io/PortfolioWebsite/",
+        "image": "https://loganeageruc.github.io/PortfolioWebsite/Assets/headshot-of-logan.jpg",
+        "email": "loganallaneager@gmail.com",
+        "description": "Logan Eager Game Design Portfolio: Unity and Unreal PC & VR projects like Press Any Key To Exist. University of Canterbury student showcasing immersive experiences.",
+        "knowsAbout": ["Unity", "Unreal Engine", "VR Game Development", "Game Design"],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Canterbury"
+        },
+        "workLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Christchurch",
+            "addressCountry": "NZ"
+          }
+        },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Bachelor of Digital Screen with Honours (Current)",
+            "credentialCategory": "Enrollment",
+            "recognizedBy": {
+              "@type": "CollegeOrUniversity",
+              "name": "University of Canterbury"
+            },
+            "educationalLevel": "Undergraduate",
+            "dateCreated": "2024-02"
+          }
+        ]
+      }
     </script>
+
   </head>
-  <!-- BACKLOG TODO: 
-    1. Add more project cards to the Projects section. 
-    2. Include icon links to relavant social media profiles in the Contact section. 
-    3. Lots else
-    -->
 
   <body>
-    <header>
-      <nav>
-        <h1>Logan Eager <span class="highlight">G.D</span></h1>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <h1>Logan Eager <span class="highlight">G.D</span></h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Header-->
+    <header id="home" class="title-hero">
+      <h1 class="hidden">Logan Eager - Game Design Student (Unity & VR)</h1>
+      <h1 class="header-1">Eager</h1>
+      <p>
+        <q class="content-1">Showcasing my passion for creating immersive gaming experiences.</q>
+      </p>
     </header>
 
+    <!-- Main Content -->
     <main>
-      <section id="home" class="hero">
-        <h1 class="hidden">Logan Eager - Game Design Student (Unity & VR)</h1>
-        <h1 class="header-1">Eager</h1>
-        <p>
-          <q class="content-1">Showcasing my passion for creating immersive gaming experiences.</q>
-        </p>
-      </section>
 
       <section id="about" class="about">
+        <h2 class="header-2">About Me</h2>
         <div>
-          <h2 class="header-2">About Me</h2>
           <p class="content-1">
             I am a game development student with an inexplicable passion for
             game design. I have an intense work ethic and a strong love of
@@ -100,7 +106,7 @@
       <section id="projects" class="projects">
         <h2 class="header-2">Projects</h2>
         <div class="project-grid">
-          <a href="press-any-key-to-exist.html" class="project-link">
+          <a href="press-any-key-to-exist.html">
             <div class="project-card">
               <img
                 src="Assets/GamePhotos/press-any-key-to-exist.png"
@@ -108,10 +114,10 @@
                 loading="lazy" width="800" height="450"
               />
               <h3>PRESS ANY KEY TO EXIST</h3>
-              <p class="content-2">Solo, VR, Unity, 4 Weeks</p>
+              <p>Solo, VR, Unity, 4 Weeks</p>
             </div>
           </a>
-          <a href="projected-helmet-ui.html" class="project-link">
+          <a href="projected-helmet-ui.html">
             <div class="project-card">
               <img
                 src="Assets/GamePhotos/ProjectedHelmetUI/projected-helmet-font-anim.gif"
@@ -119,10 +125,10 @@
                 loading="lazy" width="800" height="450"
               />
               <h3>Projected Helmet UI</h3>
-              <p class="content-2">Solo, PC, Unity, 2 Weeks</p>
+              <p>Solo, PC, Unity, 2 Weeks</p>
             </div>
           </a>
-          <a href="pack-a-snack.html" class="project-link">
+          <a href="pack-a-snack.html">
             <div class="project-card">
               <img
                 src="Assets/GamePhotos/pack-a-snack.png"
@@ -130,7 +136,7 @@
                 loading="lazy" width="800" height="450"
               />
               <h3>Pack a Snack</h3>
-              <p class="content-2">Team of 5, PC, Unity, 6 Weeks, Designer</p>
+              <p>Team of 5, PC, Unity, 6 Weeks, Designer</p>
             </div>
           </a>
         </div>
@@ -138,7 +144,7 @@
 
       <section id="contact" class="contact">
         <h2 class="header-2">Contact</h2>
-        <p class="content-2">I respond to all emails within 24 hours.</p>
+        <p class="content-1">I respond to all emails within 24 hours.</p>
         <address>
           <span class="email-prompt">Email me here:</span>
           <a href="mailto:loganallaneager@gmail.com">loganallaneager@gmail.com</a>
