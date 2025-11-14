@@ -11,16 +11,5 @@ project-hero {
 
 /* HERO */
 .project-hero {
-  height: 60vh;
   background: url("../Assets/GamePhotos/pack-a-snack.png") center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}
-.project-hero h1 {
-  font-size: clamp(3rem, 8vw, 6rem);
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
 }

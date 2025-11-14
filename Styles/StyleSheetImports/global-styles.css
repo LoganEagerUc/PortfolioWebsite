@@ -11,7 +11,28 @@
   --HLightGrey: #a1998e;
 }
 
+/* PROJECT HERO STYLES */
+.project-hero {
+  /* I think these vals get overidden on background change but still good for reference */
+  height: 60vh;
+  min-height: 400px;
+  margin: 10vh;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: purple; /* error val to remind me to fill image*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-hero .header-1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 1.8rem;
+  text-align: center;
+}
+
+/* GLOBAL STYLES */
 main {
   padding: 10vh;
 }
@@ -24,9 +45,9 @@ body {
   background-attachment: fixed;
 
   /* default typography */
-  font-family: brandon-grotesque, Helvetica, sans-serif;
+  font-family: brandon-grotesque, Helvetica;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.6;
   color: white;
 
 }
@@ -47,10 +68,10 @@ img {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
+
 .header-1 {
   font-size: clamp(4rem, 10vw, 8rem);
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: clamp(1rem, 4vw, 3rem);
 }
 
@@ -58,16 +79,17 @@ img {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 600;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 .content-1{
   font-size: clamp(1rem, 2vw, 1.5rem);
   background-color: rgba(0, 0, 0, 0.582);
   border-radius: 8px;
+  padding: 5px;
   
   max-width: fit-content;
   
+  font-family:Helvetica, sans-serif;
   font-weight: 300;
 }
 
@@ -98,7 +120,6 @@ nav {
 nav h1 {
   font-size: 4rem;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: 3px;
   margin: 0;
   padding: 0;
@@ -155,6 +176,12 @@ nav a:hover {
   img{
     height: 200px;
   }
+
+  .project-hero{
+    margin: 1vh;
+    margin-top: 10vh;
+  }
+
 
 }
 

@@ -3,3 +3,15 @@
 @import url("StyleSheetImports/fontface-styles.css");
 /* import global styles */
 @import url("StyleSheetImports/global-styles.css");
+
+.project-hero{
+  background: url(../Assets/GamePhotos/press-any-key-to-exist.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .project-hero .header-1{
+    letter-spacing: 5px;
+  }
+}

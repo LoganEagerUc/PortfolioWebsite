@@ -2,48 +2,28 @@
 /* import global styles */
 @import url("StyleSheetImports/global-styles.css");
 
-main {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+.project-hero{
+  background-image: url(../Assets/GamePhotos/ProjectedHelmetUI/projected-helmet-ui-anim.gif);
 }
 
-/* HERO */
-.project-hero {
-  position: relative;
-  height: 60vh;
-  min-height: 400px;
-  background: url("../Assets/GamePhotos/ProjectedHelmetUI/projected-helmet-ui-anim.gif") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}
-.project-hero h1 {
-  position: relative;
-  z-index: 2;
-  font-size: clamp(3rem, 8vw, 6rem);
-  letter-spacing: 0.5rem;
-  margin: 0;
-  text-transform: uppercase;
+body {
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
-  display: block;
-  margin: 2rem auto;
+  display: flex;
+  margin: 5px;
 }
 
 a {
-  color: white;
+  color: var(--HTeal);
 }
 
 @media (max-width: 768px) {
-  main {
-    padding: 0 1rem;
+  .project-hero .header-1{
+    letter-spacing: 5px;
   }
 }
