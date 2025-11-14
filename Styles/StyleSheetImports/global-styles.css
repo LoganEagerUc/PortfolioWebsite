@@ -37,6 +37,10 @@ main {
   padding: 10vh;
 }
 
+section {
+  margin-bottom: 10vh;
+}
+
 body {
   animation: fadeIn 0.5s forwards; /* FOR PAGE LOAD FADE IN */
 

@@ -40,8 +40,8 @@
       <section>
         <h1 class="header-2">Overview</h1>
 
-        <p class="content-1">This project was created using the <strong>Unity</strong> game engine. It was primarily written in <strong>HLSL</strong>, utilising unitys <strong>URP</strong> and <strong>ShaderLabs</strong> API.
-          the project was primarily research based (atleast for me) and I hit many knowledge blocks, most notably: Matrix transformations, Projection math and 
+        <p class="content-1">This project was created using the <strong>Unity</strong> game engine. It was primarily written in <strong>HLSL</strong> and <strong>C#</strong>, utilising unitys <strong>URP</strong> and <strong>ShaderLabs</strong> API.<br>
+          The project was primarily research based and I hit many <i>knowledge</i> blocks, most notably: Matrix transformations, Projection math and 
           other cornerstones of computer graphics like vertex and fragment mapping. Albeit, a great learning experience.
         </p>
 
@@ -53,8 +53,9 @@
       <section>
         <h1 class="header-2">Purpose</h1>
         
-        <p class="content-1"> I wanted to create a shader which could take a 2D render texture and translate it from the camera onto a concave mesh (as a projector would). After watching and completing a <a href="https://www.youtube.com/watch?v=EjCPr-bxI34">tutorial by RenderBucket</a> for shaders and raymarching. I became fascinated with shaders and had found an outlet
-          for a retro projector UI which I had been wanting to do for a long time. I wanted a retro-futuristic feel with an immersive touch for virtual reality based games.
+        <p class="content-1"> I wanted to create a shader which could take a 2D render texture and translate it from the camera onto a concave mesh (as a projector would).<br>
+          After watching and completing a <a href="https://www.youtube.com/watch?v=EjCPr-bxI34">tutorial by RenderBucket</a> for shaders and raymarching. I became fascinated with <strong>shaders</strong> and had found an outlet
+          for a retro UI projector, which I had been wanting to do for a long time. I wanted a retro-futuristic feel with an immersive touch for <strong>virtual-reality</strong> based games.
         </p>
         
         <img src="Assets/GamePhotos/ProjectedHelmetUI/helmet-in-space.png" alt="Projected Helmet UI in Space Environment"
@@ -65,27 +66,29 @@
       <section>
         <h1 class="header-2">Process</h1>
         
-        <p class="content-1">I built this partly during one of my game computation university courses, however after biting off more than I could chew,
-          it quickly became a passion project. I spent most of my time in old Unity forums and <strong>Visual Studio Code</strong>, just trying to get the
-           design in my head onto the screen. Notable roadblocks during development were getting a 2D UI into the projector, I ended up solving This
-           by using a 2D render texture, (a common solution for reactive UI's in unity)
+        <p class="content-1">I built this project partly during one of my <strong>game computation</strong> university courses, however, after biting off more than I could chew,
+          it quickly became a passion project.<br>
+          I spent most of my time in old Unity forums and <strong>Visual Studio Code</strong>, just trying to get the
+          design from my head onto the screen. A small roadblock during development was getting a <i>reactive</i> 2D UI into the projector.<br>
+          I ended up solving this by using a 2D render texture, (a common solution for reactive UI's in Unity).
         </p>
-
+        <!-- TODO: add figure captions -->
         <img src="Assets/GamePhotos/ProjectedHelmetUI/render-texture-gen.png" alt="Render Texture Generator"
         loading="lazy", width="800", height="450">
       </section>
 
       <!-- Product Section -->
       <section>
-        <h1 class="header-2">Product</h1>
+        <h1 class="header-2">Pipeline</h1>
 
-        <p class="content-1">The most difficult problem in this project byfar was writing the shader, I've attached the git repo below if you would like
-          a more complex explanation, but if not here is a short version; the players data is handled using <strong>Scriptable Objects</strong>
-           this is then handed to the <strong>2D Render Texture</strong> which is finally passed into the shader. In another area --- a script sends all the 
-           relevant matrices such as the <strong>Model, View and Projection matrices</strong> into the shader. The shader than samples the 2D render texture 
-           and uses the matrices to transform vertices from the texture into the clip space. Its then <i>distorted</i> by a colour and position sin wave animation 
-           while also performing a perspective divide to make sure its not orthographic. The final product is a 2D texture projected onto a concave target mesh. Repo here:
-           <a href="https://eng-git.canterbury.ac.nz/SoPD/prod-224_22s1/2025/lea46/comp-shader-proj.git">Project Git Repository</a>.
+        <p class="content-1">The most difficult problem in this project  was writing the shader. Here is a short explanation of the general pipeline I designed; the players data is handled using <strong>Scriptable Objects</strong>
+          this is then handed to the <strong>2D Render Texture</strong> which is finally passed into the shader. In another area --- a script sends all the 
+          relevant matrices such as the <strong>Model, View and Projection matrices</strong> from the "Projector Camera" game object, into the shader. The shader than samples the 2D render texture 
+          and uses the transformation matrices to take data from the 2D render texture and put it into the target game objects mesh. Its then <i>distorted</i> by a colour and position sin wave animation for aesthetics,
+          while also performing a perspective divide to make sure its not orthographic.<br>
+          The final product is a 2D texture projected onto a concave target mesh.<br>
+          Repo here:
+          <a href="https://eng-git.canterbury.ac.nz/SoPD/prod-224_22s1/2025/lea46/comp-shader-proj.git">Project Git Repository</a>.
         </p>
 
         

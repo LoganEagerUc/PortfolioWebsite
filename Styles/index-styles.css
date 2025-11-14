@@ -27,7 +27,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 800vh;
+}
+
+.about .header-2{
+  margin-bottom: 0;
 }
 
 .headshot-img {
@@ -77,6 +81,10 @@
   margin-bottom: 0px;
 }
 
+.contact .header-2 {
+  margin-bottom: 0;
+}
+
 a{
   color: var(--HTeal);
   font-weight: 700;
@@ -98,6 +106,7 @@ address{
 
    .title-hero{
     margin: 1vh;
+    margin-top: 15vh;
   }
 
 }
