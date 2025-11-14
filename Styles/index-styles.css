@@ -19,7 +19,6 @@
   background: linear-gradient(135deg, var(--HRed) 0%, var(--HDarkGrey) 100%);
   text-align: center;
   padding: clamp(8rem, 10vh, 15rem) 1rem;
-  border-bottom: none;
 }
 
 /* ABOUT SECTION STYLES */
@@ -64,8 +63,8 @@
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -5px;
+  box-shadow: 0 4px 12px rgba(191, 13, 34, 0.4);
 }
 
 .project-link {

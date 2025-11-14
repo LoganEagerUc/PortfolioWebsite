@@ -80,12 +80,10 @@ h1, h2, .header-1, .header-2, img{
 
 body {
   /* PAGE LOAD FADE IN */
-  opacity: 0;
   animation: fadeIn 0.5s forwards;
 
   background-image: url(../../Assets/web-portfolio-background.png);
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 
   font-family: brandon-grotesque, Helvetica, sans-serif;
@@ -189,7 +187,6 @@ nav a {
 
 nav a:hover {
   color: var(--HRed);
-  transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(191, 13, 34, 0.4);
 }
 
