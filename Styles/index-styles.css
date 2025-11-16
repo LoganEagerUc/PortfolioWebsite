@@ -22,21 +22,23 @@
   margin: 10vh;
 }
 
+.title-hero .header-1 {
+  letter-spacing: 1.5rem;
+}
+
 /* ABOUT SECTION STYLES */
 .about {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 800vh;
 }
-
 .about .header-2{
   margin-bottom: 0;
 }
 
 .headshot-img {
-  width: 180px;
-  height: auto;
+  width: 280px;
+  height: 280px;
   display: block;
   border-radius: 50%;
   border: 3px solid var(--HDarkGrey);
@@ -96,7 +98,7 @@ address{
 }
 
 .email-prompt {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-style: italic;
   padding: 1px;
 }
@@ -107,6 +109,21 @@ address{
    .title-hero{
     margin: 1vh;
     margin-top: 15vh;
+  }
+
+  .title-hero .header-1 {
+    letter-spacing: 0.5rem;;
+  }
+
+  .headshot-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  address{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
   }
 
 }

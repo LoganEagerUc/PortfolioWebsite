@@ -27,10 +27,21 @@
   align-items: center;
   justify-content: center;
 
-  background: purple; /* error val to remind me to fill image*/
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
+
+.project-hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .project-hero .header-1 {
   font-size: clamp(3rem, 8vw, 6rem);
   letter-spacing: 1.8rem;
@@ -74,6 +85,16 @@ img {
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
+video{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  box-sizing: border-box; 
+
+  border-radius: 8px;
+  border: var(--HTeal) 2px solid;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
 
 .header-1 {
   font-family: 'ClashDisplay-Bold', sans-serif;
@@ -85,10 +106,8 @@ img {
 
 .header-2 {
   font-family: 'ClashDisplay-Semibold', sans-serif;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
   letter-spacing: 0.15rem;
-  line-height: 1.2;
-  font-weight: 600;
 }
 
 h3 {
@@ -106,6 +125,12 @@ h3 {
   line-height: 1.6;
   font-weight: 400;
   max-width: 70ch;
+
+  background-color: rgba(0, 0, 0, 0.582);
+  border-radius: 8px;
+  padding: 5px;
+  
+  max-width: fit-content;
 }
 
 .highlight {
@@ -137,6 +162,13 @@ nav h1 {
   padding: 0;
 }
 
+nav h1.header-2 {
+  font-family: 'ClashDisplay-Semibold', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.1rem;
+  padding: 0rem 1rem;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -146,9 +178,9 @@ nav ul {
 
 nav a {
   font-family: 'SpaceGrotesk', sans-serif;
-  font-size: clamp(1.3rem, 2.5vw, 2rem);
-  letter-spacing: 0.08rem;
-  line-height: 1.4;
+  font-size: clamp(1.3rem, 1.8vw, 2rem);
+  letter-spacing: 0.01rem;
+  line-height: 1;
   font-weight: 500;
 
   color: white;

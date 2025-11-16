@@ -2,10 +2,6 @@
 /* import global styles */
 @import url("StyleSheetImports/global-styles.css");
 
-.project-hero{
-  background-image: url(../Assets/GamePhotos/ProjectedHelmetUI/projected-helmet-ui-anim.gif);
-}
-
 body {
   margin: 0 auto;
   padding: 0 1rem;
