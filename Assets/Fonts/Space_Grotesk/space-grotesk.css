@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf') format('woff2-variations');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

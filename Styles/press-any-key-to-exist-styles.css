@@ -5,7 +5,7 @@
 @import url("StyleSheetImports/global-styles.css");
 
 .project-hero{
-  background: url(../Assets/GamePhotos/press-any-key-to-exist.png);
+  background: url(../Assets/GamePhotos/PressAnyKeyToExist/press-any-key-to-exist.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

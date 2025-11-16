@@ -26,4 +26,8 @@ a {
   .project-hero .header-1{
     letter-spacing: 5px;
   }
+
+  img {
+    max-width: 100%;
+  }
 }
