@@ -1,19 +1,20 @@
 /* CSS IMPORTS FILE FOR GLOBAL STYLES */
 
 /* Import fonts */
-@import url('../../Assets/Fonts/ClashDisplay_Complete/clash-display.css'); /* my header font */
+@import url('../../Assets/Fonts/BrandonGrotesque/brandon-grotesque.css'); /* Big ahh header font */
+@import url('../../Assets/Fonts/ClashDisplay_Complete/clash-display.css'); /* my second header font */
 @import url('../../Assets/Fonts/Satoshi/satoshi.css'); /* my body font */
 @import url('../../Assets/Fonts/Space_Grotesk/space-grotesk.css'); /* my interactor font */
 
 
-
 /* Colour Palette (Colours prefixed by H), interfaced by var*/
 :root {
-  --HBlack: #0f1124;
-  --HDarkGrey: #112733;
+  --HBlack: #000000;
+  --HDarkGrey: #363232;
+  --HGrey: #423b3b;
   --HRed: #bf0d22;
   --HTeal: #7891ba;
-  --HLightGrey: #a1998e;
+  --HWhite: #f5f5f5;
 }
 
 /* PROJECT HERO STYLES */
@@ -33,6 +34,7 @@
   overflow: hidden;
 }
 
+/* Project hero is designed to hide self until video is overlayed */
 .project-hero video {
   position: absolute;
   inset: 0;
@@ -54,7 +56,7 @@ main {
 }
 
 section {
-  margin-bottom: 10vh;
+  margin-bottom: 30vh;
 }
 
 body {
@@ -63,7 +65,7 @@ body {
   font-size: clamp(1.1rem, 2vw, 1.5rem);
   line-height: 1.6;
   letter-spacing: 0.01rem;
-  color: white;
+  color: var(--HWhite);
 
   background-image: url(../../Assets/web-portfolio-background.png);
   background-size: cover;
@@ -72,6 +74,7 @@ body {
 
 q {
   font-style: italic;
+  font-weight: bolder;
 }
 
 img {
@@ -97,7 +100,7 @@ video{
 }
 
 .header-1 {
-  font-family: 'ClashDisplay-Bold', sans-serif;
+  font-family: 'BrandonGrotesque-Bold', sans-serif;
   font-size: clamp(4rem, 10vw, 9rem);
   letter-spacing: clamp(0.5rem, 3vw, 2rem);
   line-height: 1.1;
@@ -107,15 +110,20 @@ video{
 .header-2 {
   font-family: 'ClashDisplay-Semibold', sans-serif;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 }
 
-h3 {
+.header-3 {
   font-family: 'ClashDisplay-Medium', sans-serif;
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-size: clamp(1.7rem, 2vw, 2.8rem);
   letter-spacing: 0.1rem;
   line-height: 1.3;
   font-weight: 500;
+}
+
+.header-4 {
+  font-family: ClashDisplay-SemiBold, sans-serif;
+  font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .content-1 {
@@ -163,8 +171,9 @@ nav h1 {
 }
 
 nav h1.header-2 {
-  font-family: 'ClashDisplay-Semibold', sans-serif;
+  font-family: 'BrandonGrotesque-Bold', sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
   letter-spacing: 0.1rem;
   padding: 0rem 1rem;
 }
@@ -172,21 +181,22 @@ nav h1.header-2 {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  padding: 0;
+  margin-right: 5px;
 }
 
 nav a {
   font-family: 'SpaceGrotesk', sans-serif;
   font-size: clamp(1.3rem, 1.8vw, 2rem);
+  font-style: normal;
   letter-spacing: 0.01rem;
   line-height: 1;
   font-weight: 500;
 
-  color: white;
+
+  color: var(--HWhite);
   text-decoration: none;
   transition: color 0.3s;
-  padding: 0rem 0.6rem;
+  padding: 0rem 0.5rem;
 }
 
 /* cool neon effect */
@@ -209,6 +219,12 @@ nav a:hover {
   nav {
     flex-direction: column;
     border-radius: 8px;
+    padding: 0;
+  }
+
+  nav ul{
+    gap: 0.2rem;
+    margin: 0.5rem 1rem;
     padding: 0;
   }
 
@@ -250,7 +266,7 @@ footer img {
   border: none;
   width: 60px;
   height: auto;
-  filter: invert(1); /* originally black, turns white */
+  filter: invert(1); /* originally black, turns var(--HWhite) */
   box-shadow: none;
 }
 
