@@ -136,6 +136,11 @@ td{
   border-right: 2px solid var(--HBlack);
 }
 
+.typing-image {
+    width: 300px;
+    height: 300px;
+}
+
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
 
@@ -149,6 +154,11 @@ td{
   }
 
   .headshot-img {
+    width: 200px;
+    height: 200px;
+  }
+
+    .typing-image {
     width: 200px;
     height: 200px;
   }
