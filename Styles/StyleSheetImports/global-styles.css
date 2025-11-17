@@ -123,7 +123,7 @@ video{
 
 .header-4 {
   font-family: ClashDisplay-SemiBold, sans-serif;
-  font-size: clamp(1rem, 1.5vw, 2rem);
+  font-size: clamp(1.3rem, 1.5vw, 2rem);
 }
 
 .content-1 {
