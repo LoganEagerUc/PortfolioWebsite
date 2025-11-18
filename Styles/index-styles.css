@@ -13,6 +13,36 @@
   left: -9999px;
   opacity: 0;
 }
+/* NAV BAR THUD ANIMation*/
+
+nav h1 {
+  transform: translateY(-150%) scaleY(1.05);
+}
+
+nav h1.drop-in {
+  animation: drop-thud 400ms cubic-bezier(1,.1,.1,1) both;
+}
+
+@keyframes drop-thud {
+  0% {
+    transform: translateY(-150%) scaleY(1.05);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  60% {
+    transform: translateY(12px) scaleY(0.94);
+    opacity: 1;
+    box-shadow: 0 20px 36px rgba(0,0,0,0.22);
+  }
+  85% {
+    transform: translateY(-6px) scaleY(1.03);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
+  }
+}
 
 /* HERO SECTION STYLES */
 .title-hero {
@@ -20,10 +50,6 @@
   text-align: center;
   padding: clamp(8rem, 10vh, 15rem) 1rem;
   margin: 10vh;
-}
-
-.title-hero .header-1 {
-  letter-spacing: 2.5rem;
 }
 
 /* ABOUT SECTION STYLES */
@@ -43,6 +69,11 @@
   border-radius: 50%;
   border: 3px solid var(--HDarkGrey);
   object-fit: cover;
+}
+
+.typing-image {
+    width: 300px;
+    height: 300px;
 }
 
 /* PROJECTS SECTION STYLES */
@@ -97,11 +128,55 @@ address{
   display: flex;
 }
 
-.email-prompt {
-  font-size: 1.2rem;
-  font-style: italic;
-  padding: 1px;
+.contact img{
+  cursor: pointer;
 }
+
+.icon-image{
+    width: 100px;
+    height: 100px;
+    border: none;
+    margin-right: 1vh;
+    margin-left: 0;
+}
+
+.icon-image:hover{
+    transform: scale(1.1);
+}
+
+.contact ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-left: 0;
+  list-style: none;
+  padding: 0;
+}
+
+/* ICON ANIMATION */
+/* begin with icon low and invisible */
+.contact .icon-image {
+  opacity: 0;
+}
+
+/* bounce keyframes */
+@keyframes bounce-up {
+  0%   { transform: translateY(24px); opacity: 0; }
+  60%  { transform: translateY(-6px); opacity: 0.8; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* on section gets contact in view, activate animation */
+.contact.in-view .icon-image {
+  animation-name: bounce-up;
+  animation-duration: 1000ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.22,.9,.3,1);
+}
+
+/* stagger delay on child num */
+.contact.in-view ul a:nth-child(1) .icon-image { animation-delay: 0ms; }
+.contact.in-view ul a:nth-child(2) .icon-image { animation-delay: 120ms; }
 
 
 /* TABLE STYLES */
@@ -136,10 +211,6 @@ td{
   border-right: 2px solid var(--HBlack);
 }
 
-.typing-image {
-    width: 300px;
-    height: 300px;
-}
 
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
@@ -167,6 +238,12 @@ td{
     flex-direction: column;
     align-items: flex-start;
     gap: 5px;
+  }
+
+  .icon-image{
+    width: 80px;
+    height: 80px;
+    margin: 0;
   }
 
   /* table responsive styles */

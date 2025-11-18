@@ -2,15 +2,13 @@
 <html lang="en">
   <!-- ===PROJECT TODO BACKLOG=== -->
   <!-- 
-  0. Add to about me section
+  0. drop down system for nav bar
   1. Fill out projects that are not done yet (pack a snack, press any key to exist)
-  2. Refactor contact section to have icons and more platforms
-  3. Add skills section to index.html
-  4. Add project tags to project cards (engine, solo/team, duration)
-  5. Create project system to easily add more projects, featured list then full list page
-  6. Add unreal project
-  7. Add embedded project
-  8. XP System?
+  2. Add project tags to project cards (engine, solo/team, duration)
+  3. Create project system to easily add more projects, featured list then full list page
+    4. Add unreal project
+    5. Add embedded project
+  6. XP System?
   -->
   <head>
     <meta charset="UTF-8" />
@@ -70,6 +68,7 @@
         ]
       }
     </script>
+    <link rel="preload" href="Assets/web-portfolio-background.png" as="image" type="image/png">
 
   </head>
 
@@ -85,6 +84,8 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    
+    
 
     <!-- Hero Header-->
     <header id="home" class="title-hero">
@@ -111,7 +112,7 @@
             <strong>Ka kite.</strong>
           </p>
           <img
-            src="Assets/logans-professional-headshot.jpeg"
+            src="Assets/logans-professional-headshot.webp"
             class="headshot-img"
             alt="Headshot of Logan Eager, Game Design Student at University of Canterbury"
             loading="lazy"
@@ -166,7 +167,7 @@
 
           </table>
         </div>
-        <img class="typing-image" src="Assets/logan-thinking-casually.jpg" alt="Logan Eager typing on a keyboard" loading="lazy">
+        <img class="typing-image" src="Assets/logan-thinking-casually.webp" alt="Logan Eager typing on a keyboard" loading="lazy">
        </section>
 
       <!-- PROJECTS SECTION -->
@@ -200,19 +201,58 @@
       <!-- CONTACT SECTION -->
       <section id="contact" class="contact">
         <h2 class="header-2">Contact</h2>
-        <p class="content-1">I respond to all emails within 24 hours.</p>
-        <address>
-          <span class="email-prompt">Email me here:</span>
-          <a href="mailto:loganallaneager@gmail.com">loganallaneager@gmail.com</a>
-        </address>
+        <p class="content-1">Message me via email or Linkedin!</p>
+        
+        <ul>
+          <a href="mailto:loganallaneager@gmail.com">
+            <img src="Assets/email-icon.webp" alt="Email Icon" class="icon-image">
+          </a>
+
+          <a href="www.linkedin.com/in/logan-eager-967148257">
+            <img src="Assets/linkedin-icon.webp" alt="Linkedin Icon" class="icon-image">
+          </a>
+        </ul>
+        
+      
       </section>
     </main>
 
     <!-- SCROLL VISUAL AID -->
     <footer>
-      <img src="Assets/down-arrow.png" alt="Scroll Down arrow" />
+      <img src="Assets/down-arrow.webp" alt="Scroll Down arrow" />
     </footer>
     
     <script src="Scripts/scroll-visual-aid.js"></script>
+
+    <!-- nav drop-thud logic -->
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        const logo = document.querySelector('nav h1');
+        if (!logo) return;
+
+        setTimeout(() => logo.classList.add('drop-in'), 80);
+      });
+    </script>
+
+    <!-- contact icon bounce anim logic -->
+    <script>
+      (function () {
+        const contactSection = document.querySelector('#contact');
+
+        const io = new IntersectionObserver((entries, observer) => {
+
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+
+              observer.unobserve(entry.target); // run once
+            }
+
+          });
+        }, { threshold: 0.50 });
+
+        io.observe(contactSection);
+      })();
+    </script>
   </body>
 </html>
